@@ -1,0 +1,29 @@
+@import "../../App.scss";
+
+.header{
+    background: rgb(249,78,48);
+    background: linear-gradient(180deg, rgba(249,78,48,1) 0%, rgba(255,100,51,1) 100%);
+
+    .header-cnt-top{
+        border-bottom: 1px solid lighten($clr-orange, 10%);
+    }
+
+    li:hover {
+        color: rgb(199, 199, 199);
+    }
+
+    @media screen and (max-width: 992px){
+        .header-cnt-top{
+            flex-direction: column;
+            .header-cnt-top-l{
+                margin-bottom: 4px;
+            }
+        }
+    }
+    @media screen and (max-width: 400px) {
+        li {
+            font-size: 10px;
+        }
+    }
+    
+}
